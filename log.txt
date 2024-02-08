@@ -1,0 +1,90 @@
+
+O usuário 192.168.1.88:44859 acessou o recurso.
+
+O usuário 192.168.1.32:41591 acessou o recurso.
+
+O usuário 192.168.1.64:44014 acessou o recurso.
+
+O usuário 192.168.1.82:15027 acessou o recurso.
+
+O usuário 192.168.1.72:37337 acessou o recurso.
+
+O usuário 192.168.1.35:59064 acessou o recurso.
+
+O usuário 192.168.1.20:56864 acessou o recurso.
+
+O usuário 192.168.1.65:30820 acessou o recurso.
+
+O usuário 192.168.1.88:43996 acessou o recurso.
+
+O usuário 192.168.1.93:51747 acessou o recurso.
+
+O usuário 192.168.1.61:10573 acessou o recurso.
+
+O usuário 192.168.1.3:24519 acessou o recurso.
+
+O usuário 192.168.1.20:58803 acessou o recurso.
+
+O usuário 192.168.1.40:33206 acessou o recurso.
+
+O usuário 192.168.1.98:52064 acessou o recurso.
+
+O usuário 192.168.1.14:40755 acessou o recurso.
+
+O usuário 192.168.1.63:31567 acessou o recurso.
+
+O usuário 192.168.1.1:38824 acessou o recurso.
+
+O usuário 192.168.1.91:40340 acessou o recurso.
+
+O usuário 192.168.1.67:14973 acessou o recurso.
+
+O usuário 192.168.1.31:17682 acessou o recurso.
+
+O usuário 192.168.1.37:12123 acessou o recurso.
+
+O usuário 192.168.1.52:18992 acessou o recurso.
+
+O usuário 192.168.1.18:13247 acessou o recurso.
+
+O usuário 192.168.1.72:10519 acessou o recurso.
+
+O usuário 192.168.1.31:57315 acessou o recurso.
+
+O usuário 192.168.1.46:58098 acessou o recurso.
+
+O usuário 192.168.1.85:33120 acessou o recurso.
+
+O usuário 192.168.1.4:19523 acessou o recurso.
+
+O usuário 192.168.1.39:47692 acessou o recurso.
+
+O usuário 192.168.1.27:22851 acessou o recurso.
+
+O usuário 192.168.1.24:11411 acessou o recurso.
+
+O usuário 192.168.1.27:37129 acessou o recurso.
+
+O usuário 192.168.1.2:38093 acessou o recurso.
+
+O usuário 192.168.1.90:32292 acessou o recurso.
+
+O usuário 192.168.1.92:27239 acessou o recurso.
+
+O usuário 192.168.1.31:32885 acessou o recurso.
+
+O usuário 192.168.1.69:23434 acessou o recurso.
+
+O usuário 192.168.1.7:38801 acessou o recurso.
+
+O usuário 192.168.1.68:28617 acessou o recurso.
+
+O usuário 192.168.1.11:40307 acessou o recurso.
+
+O usuário 192.168.1.68:26755 acessou o recurso.
+
+O usuário 192.168.1.55:52046 acessou o recurso.
+
+O usuário 192.168.1.55:13727 acessou o recurso.
+
+O usuário 192.168.1.18:32554 acessou o recurso.
