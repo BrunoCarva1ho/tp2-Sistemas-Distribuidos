@@ -2,11 +2,12 @@ import time
 import threading
 import random
 import socket
-import os
+import datetime
 
 def start(func):
     thread = threading.Thread(target=func)
     thread.start()
+
 
 fila_espera = []
 Recurso = False
@@ -14,17 +15,22 @@ eleicao_em_andamento = False
 ip_address = None
 eleito = None
 
+
 def fila():
     global Recurso
+
     while True:
         if fila_espera:
             usuario = fila_espera.pop(0)
             print(f"O usuário {usuario} está usando o Recurso.")
+            tempo = datetime.datetime.now()
+            
             time.sleep(5)
             print(f"Usuário {usuario} liberou o Recurso ...\n\n")
             
             with open('log.txt', 'a') as arq:
-                arq.write(f"\nO usuário {usuario} acessou o recurso.\n")
+                arq.write(f"\nO usuário {usuario} acessou o recurso.\n Em: {tempo}\n")
+            
         else:
             Recurso = False
             print('O Recurso está desocupado ..')
@@ -49,8 +55,10 @@ def comunica_usuario(ip_port):
 def receive_connection():
     global ip_address
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', 12345))
+    server_socket.bind(('localhost', 60000))
     server_socket.listen(4)
+    print(f"Server Socket: {server_socket}")
+
     while True:
         client_socket, addr = server_socket.accept()
         ip_port = f"{addr[0]}:{addr[1]}"
@@ -98,14 +106,17 @@ def election():
     global eleicao_em_andamento
     global eleito
 
+    print(f"Fila Atual: {fila_espera}")
     print("Eleição requisitada ...")
+    
+    print(f"Eleito: {eleito}")
+
     for dispositivo in fila_espera:
         ip, porta = dispositivo.split(":")
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        
         client_socket.connect((ip, int(porta)))
         mensagem = client_socket.recv(1024).decode()
-        print(f"O lider agora é {dispositivo}")
-
         if mensagem == "election":
             if dispositivo == eleito:
                 eleicao_em_andamento = False
@@ -116,6 +127,8 @@ def election():
             eleicao_em_andamento = False
             eleito = dispositivo
             break
+    
+
 
 start(receive_connection)
 simulate_access()
